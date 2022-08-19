@@ -41,14 +41,14 @@ namespace TwilioApi
 
         public void Reply(String From, String Body)
         {
-            var accountSid = "AC1b6494f727a36c93894202f2e49d78ad";
-            var authToken = "36e2082c34329451adacbd392c421cdc";
+            var accountSid = "xxxb6494f727a36c93894202f2e49d78ad";
+            var authToken = "xxx2082c34329451adacbd392c421cdc";
             TwilioClient.Init(accountSid, authToken);
 
             String regCode = From[2].ToString() + From[3].ToString() + From[4].ToString();
 
             var to = new PhoneNumber(From);
-            var from = new PhoneNumber("+16402033206");
+            var from = new PhoneNumber("+1xxx2033206");
 
             var message = MessageResource.Create(
                 to: to,
